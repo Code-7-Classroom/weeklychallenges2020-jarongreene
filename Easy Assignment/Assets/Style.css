@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flag{
+    display:flex;
+}
+
+.red-stripe{
+    background-color: red;
+    height: 40px;
+    width:1000px;
+    display: block;
+}
+
+.white-stripe{
+    background-color: white;
+    height: 40px;
+    width: 1000px;
+    display: block;
+}
+
+#stars{
+    height: 282px;
+    width: 400px;
+    POsition: absolute;
+}

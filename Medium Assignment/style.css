@@ -1,0 +1,70 @@
+.grid-container {
+
+ display: grid;
+grid-template-rows: repeat(2, auto);
+grid-template-columns: repeat(4, auto);
+height: 700px;
+width: 700px;
+background-color: black;
+margin: auto;
+padding-right: 250px;
+
+}
+
+
+#block1{
+    grid-area: 1/1/1/2;
+    background-color: white;
+    
+}
+
+
+#block2{
+    
+    background-color: white;
+
+}
+
+
+#block3{
+    
+    background-color: white;
+
+}
+
+
+#block4{
+
+    background-color: white;
+
+}
+
+
+#block5{
+    
+    background-color: white;
+
+}
+
+
+
+#block6{
+    
+    background-color: white;
+
+}
+
+
+#block7{
+    
+    background-color: white;
+
+}
+
+
+
+#block8{
+
+    background-color: white;
+
+}

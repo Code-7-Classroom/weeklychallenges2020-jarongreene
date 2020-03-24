@@ -1,0 +1,35 @@
+#container {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 640px;
+    width: 640px;
+    border: 5px solid;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    
+    
+}
+
+.reverse{
+   display: flex;
+    flex-direction: row-reverse;
+}
+
+.box1 {
+    background-color: red;
+    height: 80px;
+    width: 80px;
+    
+}
+.box2 { 
+    background-color: black;
+    height: 80px;
+    width: 80px;
+    
+}
