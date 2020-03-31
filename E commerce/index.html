@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Get your favorite shonen manga for an affordable price">
+    <meta name="keywords" content="anime, shonen, shonen rocks, anime rocks">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shonen Rocks!</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <h1>Shonen Rocks!</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+    <img id="slideshow" alt="Anime slideshow" name="slide" width="900" height="500" />
+
+    <section>
+    
+    <div class="manga-container">
+
+    <div class="manga-block1 about-us">
+    <h2 id="h2-text">About Us</h2>
+    <h3>Ever get tired of paying monthly fee for manga content when you only want to read shonen? Ever only wanted to read a certain manga but had to pay outrageous amounts before you could? </h3>
+  
+    </div>
+
+
+    <div class="manga-block2">
+    <h2>Why Us?</h2>
+    <h3>Why us? Shonen Rocks not only bring you shonen only manga content but it's at an affordable price. You will have access to the manga 6 hours after it drops in Japan rather than 24 hours. </h3>
+    </div>
+
+
+
+
+        <div class="manga-block3">
+            <h2>Manga Chapters</h2>
+`           
+            <ul>
+                <li>Black Clover</li>
+                <li>Seven Deadly Sins</li>
+                <li>Bleach</li>
+                <li>Boruto</li>
+                <li>Attack on Titans</li>
+
+            </ul>
+
+            <button id="btn"><a href="product.html">Shop Now</a></button>
+
+        </div>
+
+       
+           
+        
+
+    </div>
+
+    </section>
+
+   
+   
+
+    
+
+    <section>
+
+        <footer id="main-footer">
+            <p><a href="https://www.facebook.com/">Facebook</a><i class="fa fa-facebook-square"></i></p>
+            <p><a href="https://twitter.com/explore">Twitter</a><i class="fa fa-twitter-square"></i></p>
+            <p><a href="https://www.instagram.com/?hl=en">Instagram</a><i class="fa fa-instagram"></i></p>
+            <P>Shonen Rocks! &copy; 2020, All Rights Reserved</P>
+        </footer>
+        
+        </section>
+    
+
+
+
+    <script>
+
+        var m = 0;  //Start Point
+        var images = [0,1,2,3]; //Images Array. Stores Images data
+        var time = 5000; // Time Between Switch
+
+        //Image List
+        images[0] = "https://upload.wikimedia.org/wikipedia/en/1/1d/My_Hero_Academia_-_Two_Heroes_poster.jpg"
+        images[1] = "https://upload.wikimedia.org/wikipedia/en/d/db/Boruto_manga_vol_1.jpg"
+        images[2] = "https://upload.wikimedia.org/wikipedia/en/0/09/Demon_Slayer_-_Kimetsu_no_Yaiba%2C_volume_1.jpg"
+        images[3] = "https://upload.wikimedia.org/wikipedia/en/5/5c/Hunterxhunter03.jpg"
+
+        // Change Image
+        function nextImg(){
+            document.slide.src = images[m];
+
+        // Change If Index Is Under Max
+        //.length counts how many valuables their are and it's and method
+        if(m < images.length -1){
+
+        //Check If Index is Under Max
+            m++;
+             // Add 1 to index
+        } else {
+            //Rest back to 0
+            m = 0;
+        }
+
+        //Run function every 2 seconds
+        //setTimeout is telling the function to stay on this img for 2 seconds then move on
+        setTimeout("nextImg()", time);
+        }
+
+        //Run function when page loads
+        window.onload=nextImg;
+
+
+
+
+
+
+    </script>
+</body>
+</html>
