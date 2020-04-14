@@ -90,7 +90,7 @@
 
         var m = 0;  //Start Point
         var images = [0,1,2,3]; //Images Array. Stores Images data
-        var time = 5000; // Time Between Switch
+        var time = 3000; // Time Between Switch
 
         //Image List
         images[0] = "https://upload.wikimedia.org/wikipedia/en/1/1d/My_Hero_Academia_-_Two_Heroes_poster.jpg"
@@ -103,7 +103,8 @@
             document.slide.src = images[m];
 
         // Change If Index Is Under Max
-        //.length counts how many valuables their are and it's and method
+        //.length counts how many valuables their are and it's a method
+        // -1 is for you to be able to find the location of the image
         if(m < images.length -1){
 
         //Check If Index is Under Max
@@ -114,8 +115,8 @@
             m = 0;
         }
 
-        //Run function every 2 seconds
-        //setTimeout is telling the function to stay on this img for 2 seconds then move on
+        //Run function every 5 seconds
+        //setTimeout is telling the function to stay on this img for 3 seconds then move on
         setTimeout("nextImg()", time);
         }
 
